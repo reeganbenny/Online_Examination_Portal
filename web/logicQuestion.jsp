@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="connection.jsp" %>
-<%@page import="java.com.User" %>
+<%@page import="javaFiles.User" %>
 
      <%
          try

@@ -12,7 +12,7 @@
     {
         
      Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","root");
+     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","");
      Statement stmt=con.createStatement();   
      
      String str="SELECT COUNT(id) FROM SUBJECT";

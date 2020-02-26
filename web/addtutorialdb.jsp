@@ -17,7 +17,7 @@ String error="";
 String explanation=new String(text);
 try
 {
-    str="insert into tutorial (subid,header) values ("+id+",'"+head+"')";
+    str="insert into tutorial (sid,header) values ("+id+",'"+head+"')";
     stmt.executeUpdate(str);
     str="select id from tutorial where header='"+head+"'";
     ResultSet rs=stmt.executeQuery(str);

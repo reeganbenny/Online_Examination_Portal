@@ -9,8 +9,8 @@
 <%@page import="java.util.HashMap"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-<%@page import="java.com.User" %>
-<%@page import="java.com.Result" %>
+<%@page import="javaFiles.User" %>
+<%@page import="javaFiles.Result" %>
 
 <%@include file="connection.jsp" %>
 

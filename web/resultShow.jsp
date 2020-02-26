@@ -1,7 +1,7 @@
 <%@page import="java.util.LinkedHashMap"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.com.User" %>
-<%@page import="java.com.Question" %>
+<%@page import="javaFiles.User" %>
+<%@page import="javaFiles.Question" %>
 <%@ page import="java.sql.*" %>
 <%
 int subid=Integer.parseInt(request.getParameter("subid"));
@@ -66,7 +66,7 @@ if (session.getAttribute("username") == null)
             {
                 
     Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","root");
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","");
     Statement stmt=con.createStatement();
       String str="select * from answers where lid="+id+" and subid="+subid+"";        
       String ans,block="";

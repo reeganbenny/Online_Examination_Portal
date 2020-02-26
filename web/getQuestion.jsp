@@ -21,7 +21,7 @@ int question,ans_id;
 
 
     Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","root");
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","");
     Statement stmt=con.createStatement();
     if(req.equals("first"))
     {

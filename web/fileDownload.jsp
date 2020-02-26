@@ -10,7 +10,7 @@ if(request.getParameter("qid")!=null && (request.getParameter("qid")!="") && req
 	Connection con=null;
 	try{      
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
-		con=DriverManager.getConnection(connectionURL,"root","root");      
+		con=DriverManager.getConnection(connectionURL,"root","");      
 		Statement st1=con.createStatement();
 		String strQuery = "select answer from logicalanswer where logicid="+qid+" and loginid="+lid;
 		

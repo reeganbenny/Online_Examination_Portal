@@ -6,9 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-<%@page import="java.com.User"%>
-<%@page import="java.com.Result"%>
-<%@page import="java.com.studentDetails"%>
+<%@page import="javaFiles.User"%>
+<%@page import="javaFiles.Result"%>
+<%@page import="javaFiles.studentDetails"%>
 
 <%
 response.setHeader("Cache-control","no-cache");

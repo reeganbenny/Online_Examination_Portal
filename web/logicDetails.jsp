@@ -1,7 +1,7 @@
 <%@page import="java.sql.*"%>
-<%@page import="java.com.User"%>
-<%@page import="java.com.Result"%>
-<%@page import="java.com.LogicResult"%>
+<%@page import="javaFiles.User"%>
+<%@page import="javaFiles.Result"%>
+<%@page import="javaFiles.LogicResult"%>
 <%@include file="connection.jsp" %>
      <%
 String user;

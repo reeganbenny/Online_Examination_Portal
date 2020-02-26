@@ -9,7 +9,7 @@
 <%@page import="java.lang.Integer"%>
 <%@page import="java.util.LinkedList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.com.User" %>
+<%@page import="javaFiles.User" %>
 <%
   session.setAttribute("examStart", "true");
    int total=(int)session.getAttribute("stotal");

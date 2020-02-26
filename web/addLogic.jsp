@@ -23,6 +23,7 @@ catch(Exception e)
     out.println("error   "+e.getMessage());
 }
 if(result.equals("true")){
+    
     response.sendRedirect("LogicQuestionAdd.jsp?status=true");
 }else{
    response.sendRedirect("LogicQuestionAdd.jsp?status=false");

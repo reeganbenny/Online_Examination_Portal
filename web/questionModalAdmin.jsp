@@ -62,7 +62,7 @@ if (session.getAttribute("adminname") == null)
     }
     catch(Exception e)
     {
-        
+        System.out.println("Error :"+e.getMessage());
     }
     
 %>

@@ -6,9 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-<%@page import="java.com.User"%>
-<%@page import="java.com.Result"%>
-<%@page import="java.com.studentDetails"%>
+<%@page import="javaFiles.User"%>
+<%@page import="javaFiles.Result"%>
+<%@page import="javaFiles.studentDetails"%>
 
 <%
 response.setHeader("Cache-control","no-cache");
@@ -69,7 +69,7 @@ else
  
         var head=document.getElementById("heading").value;
         var exp=document.getElementById("explanation").value;
-               alert(head+" "+exp);
+              // alert(head+" "+exp);
         if(head ==="")
         {
               alert('Field Required');

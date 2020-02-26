@@ -21,7 +21,7 @@ String str="select id from adminlogin where uname='"+uname+"' and upass='"+upass
 Connection con=null;
 try{
 Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","root");
+con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","");
 Statement stmt=con.createStatement();  
 ResultSet rs=stmt.executeQuery(str);
 

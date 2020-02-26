@@ -4,7 +4,7 @@
 <%@page import="java.lang.Integer"%>
 <%@page import="java.util.LinkedList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.com.User" %>
+<%@page import="javaFiles.User" %>
 <%
     int s=0;
      response.setHeader("Cache-control","no-cache");

@@ -6,8 +6,8 @@
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-<%@page import="java.com.User"%>
-<%@page import="java.com.Result"%>
+<%@page import="javaFiles.User"%>
+<%@page import="javaFiles.Result"%>
 
 <%@include file="connection.jsp" %>
  <%
@@ -60,7 +60,7 @@
                 }
                 catch(Exception e)
                 {
-                    out.print("Unable to connect the Server");
+                    out.print("Unable to connect the Server"+e.getMessage());
                 }
                 finally
                 {

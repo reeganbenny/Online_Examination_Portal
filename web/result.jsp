@@ -1,6 +1,6 @@
 <%@page import="java.util.LinkedHashMap"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.com.User" %>
+<%@page import="javaFiles.User" %>
 <%
     
      response.setHeader("Cache-control","no-cache");

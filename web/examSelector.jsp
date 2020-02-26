@@ -6,8 +6,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-<%@page import="java.com.User" %>
-<%@page import="java.com.Result" %>
+<%@page import="javaFiles.User" %>
+<%@page import="javaFiles.Result" %>
      <%
          try
          {
@@ -86,7 +86,7 @@ if(session.getAttribute("examStart")!=null)
    try
     {
      Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","root");
+     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cf","root","");
      Statement stmt=con.createStatement();   
      String str="SELECT * FROM subject";
      ResultSet rs=stmt.executeQuery(str);
